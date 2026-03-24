@@ -49,3 +49,7 @@ Handles notification routing based on severity:
 **Configuration Note:**
 You must replace the placeholder URL in `alertmanager.yml` with your actual Slack Webhook URL:
 `https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK`
+
+“AWS / Cloud Deployment Ready”
+
+While this stack currently runs locally via Docker Compose, it can be deployed in AWS using ECS/Fargate. Environment variables, volumes, and networking are parameterized for cloud deployment. Prometheus, Grafana, and Alertmanager can be integrated with CloudWatch logs, and the stack can scale horizontally across multiple services.
